@@ -1,0 +1,27 @@
+{
+  "name": "Oauth Tutorial FriendBlock",
+  "version": "1.0",
+  "key": "PUBLIC_KEY_FROM_APP",
+  "description": "Uses Oauth to connect Google's api and display stuff ",
+  "manifest_version": 2,
+  "browser_action": {
+	"default_title": "Friendblock"
+  },
+  "oauth2": {
+    "client_id": "CLIENT_ID.apps.googleusercontent.com",
+    "scopes":[
+      "https://www.googleapis.com/auth/contacts.readonly",
+    ]
+  },
+  "permissions": [
+    "identity"
+  ],
+  "background": {
+	"scripts": [
+	  "background.js"
+	],
+	"persistent": false
+  }
+
+}
+
